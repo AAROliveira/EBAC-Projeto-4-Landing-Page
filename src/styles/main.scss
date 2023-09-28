@@ -1,5 +1,6 @@
 @use 'variables';
 @use 'hero';
+@use 'episodes';
 
 @font-face {
     font-family: Avenir;
@@ -13,6 +14,11 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: OPTIStaines-Extended;
+    src: url(../../assets/fonts/OPTIStaines-Extended.otf);
+    font-weight: 700;
+}
 
 * {
     margin: 0;
@@ -22,7 +28,7 @@
     list-style: none;
 }
 body {
-    background-color: variables.$backgroundColor;
+    background-color: variables.$backgroundColor;    
 }
 
 @mixin title($fontSize: 40px) {
